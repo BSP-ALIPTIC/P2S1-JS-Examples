@@ -1,0 +1,28 @@
+body{
+	background-color: #FAFBFC;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0; 
+	padding: 0;
+}
+
+
+/****
+**
+** Elements de contenu principal
+**
+********/
+#main{
+	width: 600px;
+	margin: 20px auto;
+	background-color: #24292E;
+	padding:30px;
+	color: #FFFFFF;
+}
+
+input[type="button"]{
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	cursor: pointer;
+}
