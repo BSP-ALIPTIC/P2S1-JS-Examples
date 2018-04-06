@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Vérification de formulaire</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script><!-- On inclut notre feuille Javascript -->
+</head>
+<body>
+	<div id="main">
+		<fieldset>
+			<h2>Bon de commande de véhicule</h2>
+			<form id="bon_commande">
+				<span id="error"></span>
+				<table>
+					<tr>
+						<td>
+							<p>
+								Date du bon de commande :
+								<span class="small">format JJ/MM/AAAA</span>
+							</p>
+						</td>
+						<td>
+							<input type="text" value="JJ/MM/AAAA" id="date_commande"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>
+								Type de véhicule :
+							</p>
+						</td>
+						<td>
+							<span id="type_vehicule">Voiture</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>
+								Marque :
+							</p>
+						</td>
+						<td>
+							<select name="marque">
+								<option value="Renault">Renault</option>
+								<option value="Peugeot">Peugeot</option>
+								<option value="Citroen">Citroen</option>
+								<option value="Volkswagen">Volkswagen</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>
+								Couleur - Format hexadécimal 
+								<span class="small">(ex : #fefefe)</span>
+							</p>
+						</td>
+						<td>
+							<input type="text" value="" class="couleur" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>
+								Option :
+							</p>
+						</td>
+						<td>
+							<input name="option" type="radio" value="Vitres éléctriques" /> Vitres éléctriques<br>
+							<input name="option" type="radio" value="GPS" /> GPS<br>
+							<input name="option" type="radio" value="Peinture métalisée" />Peinture métalisée<br>
+							<input name="option" type="radio" value="Lecteur CD" />Lecteur CD
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="button" id="envoyer" value="Valider le bon de commande" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+		<br><hr /><br>
+		<div id="recapitualtif">
+			<h2>Récapitulatif</h2>
+			<p>
+				Date : <span id="date"></span><br>
+				Type de véhicule: <span id="type"></span><br>
+				Marque : <span id="marque"></span><br>
+				Couleur : <span id="couleur"></span><br>
+				Option : <span id="options"></span>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+	background-color: #FAFBFC;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0; 
+	padding: 0;
+}
+
+
+/****
+**
+** Elements de contenu principal
+**
+********/
+#main{
+	width: 600px;
+	margin: 20px auto;
+	background-color: #24292E;
+	padding:30px;
+	color: #FFFFFF;
+}
+
+#main ul{
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+#main ul li{
+	margin-left: 50px;
+	padding: 10px 0;
+}
+
+#main fieldset{
+	width: 400px;
+	margin: 0 auto;
+}
+
+#main table{
+	width: 100%;
+}
+
+input[type="button"]{
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	cursor: pointer;
+}
